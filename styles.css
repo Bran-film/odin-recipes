@@ -6,19 +6,16 @@
 
 body {
   position: relative;
+  margin: auto;
+  padding: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 body::after {
   content: "";
   display: block;
-  height: 150px; /* Set same as footer's height */
-}
-
-.nav-bar {
-  display: flex;
-  justify-content: end;
-  gap: 20px;
-  padding: 20px 20px 0 0;
+  height: 100px; /* Set same as footer's height */
 }
 
 header {
@@ -27,17 +24,14 @@ header {
   align-items: center;
   justify-content: center;
   margin: auto;
-  height: 300px;
-  width: 600px;
+  height: 310px;
+  width: 620px;
   text-align: center;
+  word-wrap: break-word;
 }
 
 a {
   text-decoration: none;
-  color: black;
-}
-
-a:link {
   color: black;
 }
 
@@ -49,25 +43,23 @@ a:visited {
   color: #d01c1f;
 }
 
+ul {
+  gap: 50px;
+  justify-content: center;
+  padding: 0;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
 .recipes {
   display: flex;
   flex-direction: row;
+  text-align: center;
 }
 
 li {
   list-style: none;
   width: 200px;
-}
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-ul {
-  gap: 50px;
-  justify-content: center;
 }
 
 .cropped {
@@ -83,4 +75,10 @@ footer {
   width: 100%;
   height: 50px;
   text-align: center;
+}
+
+.credits {
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px 0 0;
 }
