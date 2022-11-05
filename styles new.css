@@ -1,36 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 
+/*  color: #009b74;
+color: #d01c1f; */
+
 * {
   font-family: "Comfortaa", cursive;
 }
 
-body {
-  position: relative;
-  margin: auto;
-  padding: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-body::after {
-  content: "";
-  display: block;
-  height: 100px; /* Set same as footer's height */
-}
-
-header {
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 600px;
+  text-align: center;
   margin: auto;
-  height: 310px;
-  width: 550px;
 }
 
-header p {
-  text-align: center;
-  word-wrap: break-word;
+.recipes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.cropped {
+  width: 600px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 0% 60%;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 600px;
 }
 
 a {
@@ -46,50 +54,16 @@ a:visited {
   color: #d01c1f;
 }
 
-.recipes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-li {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  width: 200px;
-}
-
-span {
-  font-size: 2.5rem;
-  /* color: white; */
-  position: absolute;
-  text-shadow: -0.5px -0.5px 0 white, 0.51px -0.5px 0 white, -1px 1px 0 #000,
-    1px 1px 0 #000;
-  width: 400px;
-}
-
-.cropped {
-  width: 600px;
-  height: 150px;
-  object-fit: cover;
-  /* object-position: 25% 25%; */
+footer a:visited {
+  color: rgb(84, 84, 84);
 }
 
 footer {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
-  width: 100%;
   height: 50px;
   text-align: center;
-}
-
-.credits {
+  font-size: 0.7rem;
+  display: flex;
   justify-content: center;
-  gap: 20px;
-  padding: 0 20px 0 0;
 }
