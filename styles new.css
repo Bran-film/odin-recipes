@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 
+/* Index File CSS Style */
+
 /*  color: #009b74;
 color: #d01c1f; */
 
 * {
   font-family: "Comfortaa", cursive;
+}
+
+body {
+  margin: 0 auto;
 }
 
 .header {
@@ -66,4 +72,73 @@ footer {
   font-size: 0.7rem;
   display: flex;
   justify-content: center;
+}
+
+/* Specific Recipe CSS Style */
+
+.go-back {
+  display: flex;
+  justify-content: center;
+  /* margin: 20px 0 20px -840px; */
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+h2 {
+  font-size: 100px;
+  margin: 0;
+}
+
+.recipe-solo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 30px;
+}
+
+.text {
+  width: 400px;
+}
+
+.lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* width: 600px; */
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.steps {
+  border: 2px solid black;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  line-break: auto;
+  gap: 10px;
+  padding: 30px;
+  list-style-type: decimal;
+}
+
+.steps-list,
+.ingredients-parts {
+  width: 400px;
+  justify-content: flex-start;
+}
+
+.ingredients {
+  border: 2px solid black;
+  padding: 83px 10px;
+}
+
+.steps-list li {
+  list-style: decimal;
 }
