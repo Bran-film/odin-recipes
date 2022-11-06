@@ -89,6 +89,10 @@ h2 {
   margin: 0;
 }
 
+h4 {
+  text-align: center;
+}
+
 .recipe-solo {
   display: flex;
   flex-direction: row;
@@ -101,6 +105,11 @@ h2 {
 
 .text {
   width: 400px;
+}
+
+.recipe-solo img {
+  height: 347px;
+  width: auto;
 }
 
 .lists {
@@ -121,24 +130,34 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  text-align: left;
   line-break: auto;
   gap: 10px;
   padding: 30px;
-  list-style-type: decimal;
+}
+
+.ingredients-list {
+  border: 2px solid black;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 64px 30px;
+  gap: 10px;
 }
 
 .steps-list,
 .ingredients-parts {
   width: 400px;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
 }
 
-.ingredients {
-  border: 2px solid black;
-  padding: 83px 10px;
+.steps-list {
+  display: list-item;
+  list-style-type: decimal;
 }
 
-.steps-list li {
-  list-style: decimal;
+.ingredients-parts {
+  display: list-item;
+  list-style: disc;
 }
